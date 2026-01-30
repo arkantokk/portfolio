@@ -1,0 +1,1 @@
+To start this project locally you need to open terminal in main folder and write "npm run dev" previously you must install Node.js

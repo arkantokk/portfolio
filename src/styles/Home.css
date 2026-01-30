@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 10px 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+#menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+hr {
+    max-width: 1250px;
+    margin: 15px auto 15px auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Optional: Makes the link text inherit its parent's color */
+}
+
+.projects-list p{
+    padding: 15px 0px;
+    text-decoration: underline;
+}
+.git-link{
+    color: azure;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.link-styles{
+    color: azure;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #111111;
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+    padding: 40px 25px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, minmax(60px, auto));
+}
+
+section {
+    background-color: #1F1F1F;
+    padding: 30px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.name-photo {
+    grid-column: 1 / 3;
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name-photo h4{
+    color: #9f9f9f;
+}
+
+.stack {
+    grid-column: 3;
+    grid-row: span 3;
+
+}
+
+.bio {
+    grid-column: 1 / 3;
+    grid-row: span 5;
+    min-height: 250px;
+}
+
+.bio p {
+    line-height: 25px;
+    padding: 15px;
+}
+
+.links {
+    grid-column: 3;
+    grid-row: span 4;
+}
+
+.projects-list {
+    grid-column: 1;
+    grid-row: span 5;
+}
+
+.section6 {
+    grid-column: 2 / 4;
+    grid-row: span 5;
+    display: flex;
+    gap: 30px;
+
+}
+
+.image {
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.stack img{
+    padding: 0px 0px 0px 0px;
+}
+
+.last-project-info {
+    border-right: 1px solid #444;
+    padding-right: 30px;
+    flex: 1;
+}
+
+.technologies {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.technologies p{
+    padding: 10px ;
+    font-weight: 600;
+}
+
+.home {
+    font-size: xx-large;
+}
+
+.warning{
+    font-size: medium;
+    color: #f51d1d;
+}
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 0;
+        }
+
+        section {
+            grid-row: auto !important;
+            grid-column: auto !important;
+            width: 100%;
+            min-height: min-content;
+            padding: 20px;
+        }
+    }
+
+    .name-photo,
+    .stack,
+    .bio,
+    .projects-list,
+    .section6 {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .links {
+        grid-row: span 2
+    }
+
+    .section6 {
+        flex-direction: column;
+    }
+
+    .last-project-info {
+        border-right: none;
+        border-bottom: 1px solid #444;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+.screenshot {
+    background-image: url("/images/screen.webp");
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+    background-size: cover;
+    background-color: #f51d1d;
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+
+
+.projects-list ul li {
+    padding: 15px;
+    font-size: medium;
+}
+
+.popup {
+    background-color: #444;
+    opacity: 0;
+    left: 52%;
+    bottom: 5%;
+    position: fixed;
+    text-align: center;
+    padding: 15px;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.section6:hover {
+    .popup {
+        opacity: 1;
+        transform: translateY(-30px);
+        transition: all 0.9s;
+    }
+}
+
+
+
+.github{
+  width: 25px;
+  padding: 15px 0 0 0;
+}
