@@ -17,42 +17,67 @@ function Home() {
                 </section>
 
                 <section className="stack">
-                    <h2>Stack</h2>
-                    <h3>JavaScript
-                        <img style={{ width: "32px" }} src="/images/js.svg" />
-                    </h3>
-                    <h3>TypeScript
-                        <img style={{ width: "24px" }} src="/images/ts.svg" />
-                    </h3>
-                    <h3>Node.js
-                        <img style={{ width: "24px" }} src="/images/node.svg" />
-                    </h3>
-                    <h3>
-                        Express
-                        <img style={{ width: "24px" }} src="/images/express.svg" />
-                    </h3>
-                    <h3>
-                        MongoDB
-                        <img style={{ width: "24px" }} src="/images/mongodb.svg" />
-                    </h3>
+                    <h2>Technical Stack</h2>
+
+                    <div className="stack-grid">
+                        <div className="stack-group">
+                            <h4>Backend & Database</h4>
+                            <ul>
+                                <li>
+                                    <img src="/images/node.svg" alt="Node.js" />
+                                    Node.js / Express
+                                </li>
+                                <li>
+                                    <img src="/images/ts.svg" alt="TypeScript" />
+                                    TypeScript / JS
+                                </li>
+                                <li>
+                                    <img src="/images/mongodb.svg" alt="MongoDB" />
+                                    MongoDB
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="stack-group">
+                            <h4>DevOps & Automation</h4>
+                            <ul>
+                                <li>
+                                    <img src="/images/docker.svg" alt="Docker" />
+                                    Docker
+                                </li>
+                                <li>
+                                    <img src="/images/arduino.svg" alt="Arduino" />
+                                    Arduino / C++
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+                        <div className="stack-group learning">
+                            <h4>Currently Mastering</h4>
+                            <ul>
+                                <li>
+                                    <img src="/images/csharp.svg" alt=".NET" />
+                                    .NET / C#
+                                </li>
+                                <li>
+                                    <img src="/images/azure.svg" alt="Azure" />
+                                    Azure
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
 
                 <section className="bio">
                     <h2>About me</h2>
-                    <p>I am a Full-Stack Developer with a deep focus on building secure, scalable, and maintainable backend
-                        systems. I specialize in creating robust architectures where security is a priority, implementing
-                        industry-standard authentication using JWT, managing secure sessions, and protecting applications
-                        against vulnerabilities.</p>
+                    <p>Fullstack Developer</p>
 
+                    <p>I’m a developer who enjoys building things that work — from high-level web applications to low-level hardware automation. My background is a mix of self-driven software engineering and hands-on experience with industrial automation (Arduino), where I first learned to translate complex logic into reliable systems.</p>
 
+                    <p>I focus on Clean Architecture and building modular, secure backends. Whether it’s managing relational data with PostgreSQL or creating responsive interfaces with React, I aim for code that is easy to maintain and scale.</p>
 
-                    <p>
-                        My development process is rooted in Clean Architecture principles. I strictly follow the separation of
-                        concerns by decoupling logic into dedicated Controllers and Services, ensuring each component has a
-                        single responsibility. This makes the codebase modular, easy to test, and highly reliable. On the data
-                        layer, I have extensive experience with PostgreSQL, designing optimized relational schemas and ensuring
-                        data integrity. Whether it's server-side logic or database management, I strive to build
-                        high-performance products that users can trust.</p>
+                    <p>Currently, I’m living in Drammen and focusing on the .NET/Azure ecosystem. I’m a big believer in using the right tools for the job, including AI-assisted development to stay efficient and keep the focus on solving business problems rather than just writing boilerplate.</p>
 
                 </section>
 
@@ -61,8 +86,6 @@ function Home() {
                     <p><img className='github' src="images/github-svgrepo-com.svg" /> GitHub: <a
                         className='link-styles' href="https://github.com/arkantokk" target="_blank">https://github.com/arkantokk</a></p>
                     <p style={{ padding: "30px" }}>Email: arkantokbb@gmail.com</p>
-                    <p style={{ padding: "0px 30px" }}>LinkedIn: <a className='link-styles'>linkedin.com/arkantok</a></p>
-
                 </section>
 
                 <section className="projects-list">
@@ -90,7 +113,6 @@ function Home() {
 
                         </div>
                         <div className="popup">Click to visit <br></br>
-                            <p className='warning'>Takes some time to wake the servers up</p>
                         </div>
                     </a>
                 </section>
